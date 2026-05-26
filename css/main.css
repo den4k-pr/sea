@@ -1,0 +1,753 @@
+.fitness-promo-card {
+  position: relative;
+  width: 440px;
+  height: 880px; /* Висота підібрана пропорційно до макету */
+  overflow: hidden;
+  background-color: #d1e4f3; /* Резервний фон */
+}
+
+.promo-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.promo-top-strip {
+  position: absolute;
+  font-family: 'Outfit-Bold';
+
+  top: 30px;
+  left: 0;
+  width: 100%;
+  padding: 8px 0;
+  background: linear-gradient(90deg, #FBAD71 0%, #FFE8D7 100%);
+  color: #4A2B06;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  z-index: 1;
+}
+
+.promo-header-group {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.promo-main-title {
+  color: #FFF;
+  text-align: center;
+  font-size: 48px;
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0 0 25px 0;
+  text-transform: uppercase;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.promo-subtitle {
+  color: #FECDA7;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+.promo-description {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Outfit-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.promo-features-bar {
+  position: absolute;
+  top: 290px;
+  left: 20px;
+  width: 400px;
+  height: 60px;
+  border-radius: 15px;
+  background: rgba(85, 87, 95, 0.85); /* Темний напівпрозорий фон з макету */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 10px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-icon {
+  width: 24px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.feature-text {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-family: 'Outfit-Medium';
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.feature-divider {
+  width: 1px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.promo-price-badge {
+    position: absolute;
+    bottom: 172px;
+    left: 8px;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transform: rotate(-6deg);/* Легкий нахил тексту, як на оригіналі */
+}
+
+.price-label {
+  font-family: 'Outfit-Bold';
+  color: #FFF;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.price-amount {
+  color: #FFF;
+  font-family: 'Outfit-Bold';
+  font-size: 59.316px; /* Строго за вашим завданням */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.promo-cta-btn {
+  position: absolute;
+  bottom: 80px;
+  left: 25px;
+  width: 390px;
+  font-family: 'Outfit-Bold';
+  height: 80px;
+  border-radius: 150px;
+  border: 2px solid rgba(255, 255, 255, 0.20);
+  background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #47B8FF 0%, #4398CD 100%);
+  box-shadow: 0 4px 20.5px 0 #6FC7FF inset;
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  padding: 0;
+}
+
+.promo-footer {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  z-index: 2;
+}
+
+.promo-footer span {
+  color: #FFF;
+  text-shadow: 0 4px 8.4px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: 'Outfit-Bold';
+}
+
+/* Основний контейнер */
+.program-preview-card {
+  position: relative;
+  width: 440px;
+  background: linear-gradient(180deg, #DCEAF4 0%, #E7DFD4 100%);
+  padding: 50px 0 40px 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Секція заголовків */
+.header-section {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.main-title {
+  color: #111111;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+
+.subtitle-text {
+  color: #111111;
+  font-family: 'Outfit-Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.highlight-blue {
+  font-family: 'Outfit-Medium';
+  color: #0D88D6;
+}
+
+/* Блок відео-заглушки */
+.video-placeholder {
+  width: 390px;
+  height: 250px;
+  margin: 0 auto 40px auto;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.play-button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #6DBEFC 0%, #4A9DCE 100%);
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.4), 0 5px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent #FFFFFF;
+  margin-left: 5px; /* Вирівнювання трикутника по центру */
+}
+
+/* Блакитний нижній банер */
+.blue-promo-banner {
+  position: relative;
+  width: 390px;
+  height: 210px;
+  margin: 0 auto;
+  border-radius: 24px;
+  background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #47B8FF 0%, #4398CD 100%);
+  box-shadow: 0 12px 30px rgba(67, 152, 205, 0.25);
+  padding: 25px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Переваги (пігулки) */
+.pills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.feature-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 40px;
+  padding: 5px 16px;
+  border-radius: 100px;
+background: rgba(255, 255, 255, 0.10);
+box-shadow: 0 12px 14.8px 0 rgba(0, 0, 0, 0.13);
+}
+
+.pill-shifted {
+  margin-left: 55px; /* Зсув другої плашки вправо згідно дизайну */
+}
+
+.pill-icon {
+  width: 21.5px;
+  height: 21.5px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.pill-text {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-style: normal;
+  font-family: 'Outfit-Regular';
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* Текстовий блок знизу */
+.banner-bottom-text {
+  max-width: 260px; /* Запобігає наїзду тексту на телефон */
+  margin-top: auto;
+}
+
+.banner-title {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.banner-desc {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Outfit-Regular';
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Телефон */
+.phone-mockup {
+  position: absolute;
+  right: 15px;
+  bottom: -3px;
+  width: 85px;
+  height: 233px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.2));
+  z-index: 2;
+}
+
+/* Основний контейнер секції */
+.reset-section {
+  width: 440px;
+  background: linear-gradient(180deg, #E3F0F8 0%, #F3ECE6 100%);
+  padding: 50px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Заголовки */
+.reset-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.reset-title {
+  color: #111111;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+
+.reset-subtitle {
+  font-family: 'Outfit-Medium';
+  color: #111111;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.text-blue {
+  font-family: 'Outfit-Medium';
+  color: #0D88D6;
+}
+
+/* Сітка карток */
+.reset-cards-grid {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cards-row {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* Спільні стилі для всіх карток */
+.reset-card {
+  border-radius: 20px;
+  background: linear-gradient(36deg, #FBAD71 -35.67%, #FFE8D7 70.92%);
+  box-shadow: 0 4px 21.1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+}
+
+/* Вертикальні картки (в рядах по 2) */
+.card-vertical {
+  flex: 1;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Горизонтальна широка картка */
+.card-horizontal {
+  width: 100%;
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Картинки всередині карток */
+.card-image {
+  width: 127px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Відступ для вертикальних карток */
+.card-vertical .card-image {
+  margin-bottom: 20px;
+}
+
+/* Щоб картинка в горизонтальній картці не стискалася */
+.flex-shrink-img {
+  flex-shrink: 0;
+}
+
+/* Текст всередині карток */
+.card-text {
+  color: #111111;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+  font-family: 'Outfit-Regular';
+  margin: 0;
+}
+
+.card-text strong {
+  font-weight: 700;
+  font-family: 'Outfit-Bold';
+}
+
+/* Вирівнювання тексту для широкої картки */
+.text-left {
+  text-align: left;
+}
+
+
+/* Головний контейнер */
+.s4 {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 24px 12px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #c3cfd8 0%, #d0c3b7 100%);
+  font-family: 'Gilroy', sans-serif;
+}
+
+/* Обгортка для колонок */
+.s4-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Загальні стилі колонок */
+.s4-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 10px 40px 10px;
+  box-sizing: border-box;
+  width: calc(50% - 6px);
+}
+
+.s4-column.s4-before{
+  padding: 15px 0px 15px 0px;
+      border-radius: 0 24px 24px 0;
+      width: 45%;
+}
+.s4-before .s4-card{
+  min-height: 84px;
+}
+.s4-after {
+  background: linear-gradient(180deg, #349bdc 0%, #005487 100%);
+  border-radius: 24px;
+}
+
+/* Сіра колонка */
+.s4-before {
+  background: linear-gradient(180deg, #bbb 0%, #4b4b4b 100%);
+  border-radius: 0 0 24px 24px;
+  margin-top: 16px;
+}
+
+/* Круглий аватар (84px) */
+.s4-avatar-box {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.s4-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Заголовки */
+.s4-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 12px rgba(17, 46, 81, 0.55);
+  margin: 0 0 28px 0;
+}
+
+/* Вертикальний стек */
+.s4-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Біла картка-плашка (157px) */
+.s4-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 14px 8px 8px;
+  width: 157px;
+  min-height: 85px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Специфічний стиль для картки в сірій колонці */
+.s4-before .s4-card {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+/* Іконки зверху картки (24px) */
+.s4-card-icon {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  z-index: 5;
+}
+
+/* Текст (16px) */
+.s4-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  font-family: 'Outfit-Regular';
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+.s4-before .s4-card-text{
+  font-size: 14px;
+}
+
+/* Сині жирні слова */
+.s4-text-blue {
+  font-weight: 700;
+  font-family: 'Outfit-Bold';
+  color: #00588f;
+}
+
+/* Головний контейнер компонента */
+.s5 {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #c3cfd8 0%, #d0c3b7 100%);
+  font-family: 'Gilroy', sans-serif;
+}
+
+/* Головний великий заголовок секції */
+.s5-main-title {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: 'Sansation-Bold';
+  line-height: 119%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  margin: 0 0 32px 0;
+}
+
+/* Акцентний синій текст у заголовку */
+.s5-text-blue {
+  color: #0d88d6;
+  font-family: 'Sansation-Bold';
+}
+
+/* Стек карток */
+.s5-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 100%;
+}
+
+/* Окрема картка */
+.s5-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Обгортка картинки для абсолютного позиціонування тексту поверх вбудованої плашки */
+.s5-image-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 24px; /* Збігається зі скругленням твоїх картинок */
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+/* Сама фонова картинка картки */
+.s5-card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Контейнер-оверлей, який центрує текст строго поверх розмитої зони картинки */
+.s5-card-title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 33%; /* Займає нижню третину зображення, де знаходиться вбудований блюр */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+/* Заголовок всередині картки (поверх плашки) */
+.s5-card-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 107%;
+  font-family: 'Outfit-Medium';
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+/* Опис під картинкою */
+.s5-card-desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  text-align: center;
+  color: #000;
+  font-family: 'Outfit-Regular';
+  margin: 0;
+  padding: 0 8px;
+  max-width: 95%;
+}
