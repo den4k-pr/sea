@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Summer Body Fit Reset</title>
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
 
 </head>
 <body>
@@ -89,6 +93,8 @@
     <span>3 MONTHS ACCESS</span>
   </div>
 </div>
+<div class="blur">
+
 <div class="program-preview-card">
   <div class="header-section">
     <h2 class="main-title">CAN’T WAIT TO SEE YOU<br>ON THE PROGRAM!</h2>
@@ -943,6 +949,9 @@
     
     <img src="./images/cards.webp" alt="Payment Methods" class="contacts__payments">
 </section>
+
+    </div>
+</div>
 <div class="footer-bg" id="footer-bg">
   <div class="footer">
     <div class="footer-top-row">
@@ -961,7 +970,43 @@
   </div>
 </div>
     </div>
-    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const bgImage = document.querySelector('.promo-bg-image');
+  const promoSection = document.querySelector('.fitness-promo-card');
+
+  if (bgImage && promoSection) {
+    window.addEventListener('scroll', () => {
+      // ПЕРЕВІРКА ШИРИНИ ЕКРАНУ: якщо 440px і більше — ефект не працює
+      if (window.innerWidth >= 440) {
+        // Скидаємо трансформацію, щоб картинка не зависла у збільшеному стані
+        bgImage.style.transform = ''; 
+        return;
+      }
+
+      const scrollTop = window.scrollY; // Поточний скрол від верху сторінки
+      const maxScroll = promoSection.offsetHeight; // Висота першого блоку (поріг ефекту)
+      
+      // НАЛАШТУВАННЯ СKЕЙЛУ:
+      const minScale = 1;    // Початковий розмір картинки
+      const maxScale = 1.25; // Максимальний розмір (1.25 = +25% до розміру)
+
+      // Вираховуємо відсоток пройденого шляху першого блоку (від 0 до 1)
+      let scrollPercent = scrollTop / maxScroll;
+      
+      // Обмежуємо значення, щоб скейл не ріс нескінченно далі по сторінці
+      if (scrollPercent > 1) scrollPercent = 1;
+      if (scrollPercent < 0) scrollPercent = 0;
+
+      // Рахуємо поточний масштаб
+      const currentScale = minScale + (maxScale - minScale) * scrollPercent;
+
+      // Застосовуємо трансформацію до картинки
+      bgImage.style.transform = `scale(${currentScale})`;
+    }, { passive: true }); // passive: true покращує продуктивність скролу на мобільних
+  }
+});
+</script>
     <script defer>
             document.addEventListener('DOMContentLoaded', () => {
                 const footer = document.getElementById('footer-bg'); // елемент, до якого додамо клас
@@ -975,8 +1020,9 @@
                         footer.classList.remove('active');
                     }
                 });
-            });
+            })
     </script>
+    
     <script src="./js/anim.js"></script>
     <script src="./js/faq.js"></script>
     <script src="./js/timer.js"></script>

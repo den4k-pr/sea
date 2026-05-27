@@ -4,16 +4,33 @@
   height: 880px; /* Висота підібрана пропорційно до макету */
   overflow: hidden;
   background-color: #d1e4f3; /* Резервний фон */
+
+  
 }
 
 .promo-bg-image {
   position: fixed;
   top: 0;
-  
-  width: 440px;
+
+  max-width: 440px;
   height: 880px;
   object-fit: cover;
+
   z-index: 0;
+
+ will-change: transform;
+  transform-origin: center center; /* Збільшення буде йти від центру */
+  transition: transform 0.05s linear; /* Створює ефект плавного "доводження" */
+}
+
+
+.promo-bg-image.is-fixed {
+  position: fixed;
+  top: 0px;
+
+  transform: translateX(-50%) scale(0.98);
+
+  filter: saturate(1.02);
 }
 
 .promo-top-strip {
@@ -119,6 +136,11 @@
   font-weight: 400;
   line-height: 20px;
   margin: 0;
+}
+
+.blur{
+  background: rgba(255, 255, 255, 0.55);
+backdrop-filter: blur(35px);
 }
 
 .promo-features-bar {
@@ -253,8 +275,7 @@
 .program-preview-card {
   position: relative;
   width: 440px;
-  background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+  
   padding: 50px 0 40px 0;
   overflow: hidden;
   box-sizing: border-box;
@@ -473,8 +494,7 @@
 /* Основний контейнер секції */
 .reset-section {
   width: 440px;
-  background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+  
   position: relative;
   z-index: 9;
   padding: 50px 0;
@@ -599,8 +619,7 @@
 /* Основний контейнер секції */
 .program-section {
   width: 440px;
-  background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+  
   position: relative;
   z-index: 9;
   padding: 50px 0;
@@ -811,8 +830,7 @@
 
 .info{
   padding: 50px 0;
-  background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+  
   z-index: 9;
   position: relative;
 }
@@ -820,8 +838,7 @@
 /* Контейнер секції */
 .rr-section {
   width: 440px;
-  background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+  
   position: relative;
   z-index: 9;
   padding: 60px 0;
@@ -939,8 +956,7 @@
 /* Основний контейнер секції */
 .ap-section {
   width: 440px;
-  background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+  
   position: relative;
   z-index: 9;
   padding: 50px 0;
@@ -1183,8 +1199,7 @@ box-shadow: 0 12px 14.8px 0 rgba(0, 0, 0, 0.13);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+  
   position: relative;
   z-index: 9;
   box-sizing: border-box;
@@ -1246,8 +1261,7 @@ box-shadow: 0 12px 14.8px 0 rgba(0, 0, 0, 0.13);
   margin: 0 auto;
   padding: 60px 12px;
   box-sizing: border-box;
-  background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+  
   position: relative;
   z-index: 9;
   font-family: 'Gilroy', sans-serif;
@@ -1392,8 +1406,7 @@ box-shadow: 0 12px 14.8px 0 rgba(0, 0, 0, 0.13);
   margin: 0 auto;
   padding: 60px 16px;
   box-sizing: border-box;
-background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+
   position: relative;
   z-index: 9;
   font-family: 'Gilroy', sans-serif;
@@ -1541,8 +1554,7 @@ background-color: #ffffff24;
 /* Контейнер секції */
 .rr-section-2 {
   width: 440px;
-  background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+  
   position: relative;
   z-index: 9;
   padding: 60px 0;
@@ -1654,8 +1666,7 @@ background-color: #ffffff24;
 
 .s7 {
     width: 440px;
-    background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+    
   position: relative;
   z-index: 9;
     padding: 20px 15px;
@@ -1754,8 +1765,7 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
 
 .contacts {
     padding: 48px 24px 200px 24px;
-   background-color: #ffffff24;
-  backdrop-filter: blur(40px);
+   
   position: relative;
   z-index: 9;
     box-sizing: border-box;
