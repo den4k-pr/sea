@@ -140,24 +140,81 @@
   <div class="video-carousel">
     <div class="video-track">
       <div class="video-item">
-        <video poster="./images/poster-1.webp" src="https://itden-cdn.b-cdn.net/sea/video-1.mp4" autoplay loop muted playsinline></video>
-      </div>
-      <div class="video-item">
-        <video poster="./images/poster-2.webp" src="https://itden-cdn.b-cdn.net/sea/video-2.mp4" autoplay loop muted playsinline></video>
-      </div>
-      <div class="video-item">
-        <video poster="./images/poster-3.webp" src="https://itden-cdn.b-cdn.net/sea/video-3.mp4" autoplay loop muted playsinline></video>
-      </div>
-      
-     <div class="video-item">
-        <video poster="./images/poster-1.webp" src="https://itden-cdn.b-cdn.net/sea/video-1.mp4" autoplay loop muted playsinline></video>
-      </div>
-      <div class="video-item">
-        <video poster="./images/poster-2.webp" src="https://itden-cdn.b-cdn.net/sea/video-2.mp4" autoplay loop muted playsinline></video>
-      </div>
-      <div class="video-item">
-        <video poster="./images/poster-3.webp" src="https://itden-cdn.b-cdn.net/sea/video-3.mp4" autoplay loop muted playsinline></video>
-      </div>
+      <video
+        class="lazy-video"
+        poster="./images/poster-1.webp"
+        data-src="https://itden-cdn.b-cdn.net/sea/video-1.mp4"
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="none"
+      ></video>
+    </div>
+
+    <div class="video-item">
+      <video
+        class="lazy-video"
+        poster="./images/poster-2.webp"
+        data-src="https://itden-cdn.b-cdn.net/sea/video-2.mp4"
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="none"
+      ></video>
+    </div>
+
+    <div class="video-item">
+      <video
+        class="lazy-video"
+        poster="./images/poster-3.webp"
+        data-src="https://itden-cdn.b-cdn.net/sea/video-3.mp4"
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="none"
+      ></video>
+    </div>
+    <div class="video-item">
+      <video
+        class="lazy-video"
+        poster="./images/poster-1.webp"
+        data-src="https://itden-cdn.b-cdn.net/sea/video-1.mp4"
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="none"
+      ></video>
+    </div>
+
+    <div class="video-item">
+      <video
+        class="lazy-video"
+        poster="./images/poster-2.webp"
+        data-src="https://itden-cdn.b-cdn.net/sea/video-2.mp4"
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="none"
+      ></video>
+    </div>
+
+    <div class="video-item">
+      <video
+        class="lazy-video"
+        poster="./images/poster-3.webp"
+        data-src="https://itden-cdn.b-cdn.net/sea/video-3.mp4"
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="none"
+      ></video>
+    </div>
     </div>
   </div>
 
@@ -1017,7 +1074,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
     </script>
     
-    <script src="./js/anim.js"></script>
+    <script src="./js/video.js"></script>
     <script src="./js/faq.js"></script>
     <script src="./js/timer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
