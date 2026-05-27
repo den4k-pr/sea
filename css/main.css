@@ -13,7 +13,7 @@
   top: 0;
 
   max-width: 440px;
-  height: 880px;
+  height: 900px;
   object-fit: cover;
 
   z-index: 0;
@@ -1127,7 +1127,7 @@ box-shadow: 0 12px 14.8px 0 rgba(0, 0, 0, 0.13);
   background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #47B8FF 0%, #4398CD 100%);
   padding: 12px 20px;
   margin-bottom: 15px;
-  margin-top: 170px;
+  margin-top: 195px;
 }
 
 /* Підзаголовок всередині картки */
@@ -2477,7 +2477,7 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
     border-radius: 1.8182vw;
     padding: 2.7273vw 4.5455vw;
     margin-bottom: 3.4091vw;
-    margin-top: 38.6364vw;
+    margin-top: 45.6364vw;
   }
 
   .ap-card-subtitle {
