@@ -622,7 +622,7 @@ backdrop-filter: blur(35px);
   
   position: relative;
   z-index: 9;
-  padding: 50px 0;
+  padding: 0;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -829,7 +829,7 @@ backdrop-filter: blur(35px);
 }
 
 .info{
-  padding: 50px 0;
+  padding: 50px 0 0 0;
   
   z-index: 9;
   position: relative;
@@ -841,7 +841,6 @@ backdrop-filter: blur(35px);
   
   position: relative;
   z-index: 9;
-  padding: 60px 0;
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
   overflow: hidden; /* Важливо для слайдера */
@@ -1195,7 +1194,7 @@ box-shadow: 0 12px 14.8px 0 rgba(0, 0, 0, 0.13);
 .tr-section {
   display: flex;
   width: 440px;
-  padding: 60px 24px;
+  padding: 0px 24px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -2241,7 +2240,7 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
   .program-section {
     width: 100vw;
     backdrop-filter: blur(9.0909vw);
-    padding: 11.3636vw 0;
+    padding: 0;
   }
 
   .program-header {
@@ -2341,14 +2340,14 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
   }
 
   .info {
-    padding: 11.3636vw 0;
+    padding: 11.3636vw 0 0 0;
     backdrop-filter: blur(9.0909vw);
   }
 
   .rr-section {
     width: 100vw;
     backdrop-filter: blur(9.0909vw);
-    padding: 13.6364vw 0;
+  
   }
 
   .rr-title {
@@ -2510,7 +2509,7 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
 
   .tr-section {
     width: 100vw;
-    padding: 13.6364vw 5.4545vw;
+    padding: 0 5.4545vw;
     backdrop-filter: blur(9.0909vw);
   }
 
