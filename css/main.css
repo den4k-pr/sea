@@ -497,7 +497,7 @@ backdrop-filter: blur(35px);
   
   position: relative;
   z-index: 9;
-  padding: 50px 0;
+  padding: 25px 0;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -2183,7 +2183,7 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
   .reset-section {
     width: 100vw;
     backdrop-filter: blur(9.0909vw);
-    padding: 11.3636vw 0;
+    padding: 6.3636vw 0;
   }
 
   .reset-header {
@@ -2473,7 +2473,7 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
   }
 
   .ap-blue-header {
-    font-size: 4.3182vw;
+    font-size: 4.182vw;
     border-radius: 1.8182vw;
     padding: 2.7273vw 4.5455vw;
     margin-bottom: 3.4091vw;
