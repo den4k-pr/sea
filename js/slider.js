@@ -1,12 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // FIRST SLIDER
-    const firstSliderEl = document.querySelector(".first-swiper");
+document.addEventListener('DOMContentLoaded', function () {
+  const rrSliderEl = document.querySelector('.rr-swiper');
 
-    if (firstSliderEl) {
-        new Swiper(firstSliderEl, {
-            loop: true,
+  if (rrSliderEl) {
+    new Swiper(rrSliderEl, {
+      loop: true,
             spaceBetween: 20,
-            slidesPerView: 1.1,
+            slidesPerView: 2.2,
 
             autoplay: {
                 delay: 20000, // 20 секунд
@@ -14,59 +13,40 @@ document.addEventListener("DOMContentLoaded", () => {
             },
 
             pagination: {
-                el: ".first-slider-pagination",
-                clickable: true,
-            },
+        el: '.rr-pagination',
+        clickable: true,
+      },
 
-            navigation: {
-                nextEl: ".s8__arrow-next",
-                prevEl: ".s8__arrow-prev",
-            },
-        });
-    }
-
-    // SECOND SLIDER
-    const secondSliderEl = document.querySelector(".second-swiper");
-
-    if (secondSliderEl) {
-        new Swiper(secondSliderEl, {
-            loop: true,
-            spaceBetween: 20,
-            slidesPerView: 1,
-
-            autoplay: {
-                delay: 20000, // 20 секунд
-                disableOnInteraction: false,
-            },
-
-            pagination: {
-                el: ".second-slider-pagination",
-                clickable: true,
-                bulletClass: "swiper-pagination-bullet",
-                bulletActiveClass: "swiper-pagination-bullet-active",
-            },
-
-            navigation: {
-                nextEl: ".s8__arrow-next",
-                prevEl: ".s8__arrow-prev",
-            },
-        });
-    }
-
-    // GALLERY SLIDER
-    const galleryEl = document.querySelector(".gallery-swiper");
-
-    if (galleryEl) {
-        new Swiper(galleryEl, {
-            loop: true,
-            spaceBetween: 20,
-            slidesPerView: 2,
-            centeredSlides: false,
-
-            autoplay: {
-                delay: 20000, // 20 секунд
-                disableOnInteraction: false,
-            },
-        });
-    }
+      // Навігація (стрілки)
+      navigation: {
+        nextEl: '.rr-btn-next',
+        prevEl: '.rr-btn-prev',
+      },
+    });
+  }
 });
+
+const rrSliderEl2 = document.querySelector('.rr-swiper-2');
+
+if (rrSliderEl2) {
+  new Swiper(rrSliderEl2, {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1,
+
+    autoplay: {
+      delay: 20000, // 20 секунд
+      disableOnInteraction: false,
+    },
+
+    pagination: {
+      el: '.rr-pagination-2',
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.rr-btn-next-2',
+      prevEl: '.rr-btn-prev-2',
+    },
+  });
+}
