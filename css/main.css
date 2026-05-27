@@ -107,11 +107,11 @@
   color: #FFF;
   text-align: center;
   font-size: 48px;
-  padding-top: 20px;
+  padding-top: 10px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.05;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   text-transform: uppercase;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -145,7 +145,7 @@ backdrop-filter: blur(35px);
 
 .promo-features-bar {
   position: absolute;
-  top: 280px;
+  top: 270px;
   left: 20px;
   width: 400px;
   height: 60px;
@@ -1998,8 +1998,6 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
 
   .promo-main-title {
     font-size: 10.9091vw;
-    padding-top: 4.5455vw;
-    margin: 0 0 3.6818vw 0;
     text-shadow: 0 0.9091vw 2.2727vw rgba(0, 0, 0, 0.15);
   }
 
@@ -2015,7 +2013,7 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
   }
 
   .promo-features-bar {
-    top: 63.9091vw;
+    top: 61.9091vw;
     left: 4.5455vw;
     width: 90.9091vw;
     height: 13.6364vw;
