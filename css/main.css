@@ -652,7 +652,7 @@ backdrop-filter: blur(35px);
 
 /* Сітка карток */
 .program-cards-grid {
-  padding: 0 20px;
+  padding: 0 20px 60px 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -2250,7 +2250,7 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
   }
 
   .program-cards-grid {
-    padding: 0 4.5455vw;
+    padding: 0 4.5455vw 12vw 4.5455vw;
     gap: 3.4091vw;
   }
 
