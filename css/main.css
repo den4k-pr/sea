@@ -1088,7 +1088,10 @@ box-shadow: 0 12px 14.8px 0 rgba(0, 0, 0, 0.13);
   background-image: url(../images/wind-frame.webp);
   background-repeat: no-repeat;
   background-size: contain;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 29px;
 }
 
 .ap-wrapper-2 {
@@ -1127,7 +1130,10 @@ box-shadow: 0 12px 14.8px 0 rgba(0, 0, 0, 0.13);
   background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #47B8FF 0%, #4398CD 100%);
   padding: 12px 20px;
   margin-bottom: 15px;
-  margin-top: 195px;
+}
+
+.ap-wrapper-2 .ap-blue-header {
+  padding: 20px;
 }
 
 /* Підзаголовок всередині картки */
@@ -2451,14 +2457,18 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
   }
 
   .ap-ring-container {
-    margin: 7.9545vw 0 4.5455vw 0;
+    margin: 7.9545vw 0 5vw 0;
   }
 
   .ap-bottom-wrapper {
     height: 135.2273vw;
-    padding: 0 4.5455vw;
+    padding: 0 4.5455vw 6vw 4.5455vw;
     border-radius: 5.4545vw;
   }
+
+  .ap-wrapper-2 .ap-blue-header {
+    padding: 5.4vw;
+}
 
   .ap-wrapper-2 {
     height: 153.4091vw;
@@ -2476,8 +2486,6 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
     font-size: 4.182vw;
     border-radius: 1.8182vw;
     padding: 2.7273vw 4.5455vw;
-    margin-bottom: 3.4091vw;
-    margin-top: 45.6364vw;
   }
 
   .ap-card-subtitle {
