@@ -1,15 +1,22 @@
 .fitness-promo-card {
   position: relative;
   width: 440px;
-  height: 880px; /* Висота підібрана пропорційно до макету */
+  height: 900px; /* Висота підібрана пропорційно до макету */
   overflow: hidden;
   background-color: #d1e4f3; /* Резервний фон */
 
   
 }
 
+.rate{
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 9;
+}
+
 .promo-bg-image {
-  position: fixed;
+  position: absolute;
   top: 0;
 
   max-width: 440px;
@@ -107,11 +114,11 @@
   color: #FFF;
   text-align: center;
   font-size: 48px;
-  padding-top: 10px;
+  padding-top: 23px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.05;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
   text-transform: uppercase;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -145,12 +152,12 @@ backdrop-filter: blur(35px);
 
 .promo-features-bar {
   position: absolute;
-  top: 270px;
+  top: 275px;
   left: 20px;
   width: 400px;
   height: 60px;
-  border-radius: 15px;
-  background: rgba(85, 87, 95, 0.85); /* Темний напівпрозорий фон з макету */
+  border-radius: 12px;
+background: rgba(29, 7, 2, 0.35);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -224,7 +231,7 @@ backdrop-filter: blur(35px);
 
 .promo-cta-btn {
   position: absolute;
-  bottom: 80px;
+  bottom: 105px;
   left: 25px;
   width: 390px;
   font-family: 'Outfit-Bold';
@@ -250,13 +257,14 @@ backdrop-filter: blur(35px);
 
 .promo-footer {
   position: absolute;
-  bottom: 30px;
+  bottom: 17px;
   left: 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
   z-index: 2;
 }
 
@@ -269,6 +277,127 @@ backdrop-filter: blur(35px);
   line-height: 20px;
   text-transform: uppercase;
   font-family: 'Outfit-Bold';
+}
+
+@media (max-width: 440px) {
+  .fitness-promo-card {
+    width: 100vw;
+    height: 204.545vw;
+  }
+
+  .promo-bg-image {
+    max-width: 100vw;
+    height: 204.545vw;
+  }
+
+  .promo-top-strip {
+    top: 6.818vw;
+    padding: 1.818vw 0;
+  }
+
+  .promo-strip-track p,
+  .promo-strip-track span {
+    font-size: 3.636vw;
+    line-height: 4.545vw;
+    letter-spacing: 0.114vw;
+  }
+
+  .promo-strip-track p {
+    padding: 0 2.273vw;
+  }
+
+  .promo-strip-track span {
+    padding-right: 9.091vw;
+  }
+
+  .promo-header-group {
+    top: 14.773vw;
+  }
+
+  .promo-main-title {
+    font-size: 10.909vw;
+    padding-top: 5.227vw;
+    margin: 0 0 4.545vw 0;
+  }
+
+  .promo-subtitle {
+    font-size: 3.636vw;
+    line-height: 4.545vw;
+    margin: 0 0 1.136vw 0;
+  }
+
+  .promo-description {
+    font-size: 3.636vw;
+    line-height: 4.545vw;
+  }
+
+  .blur {
+    backdrop-filter: blur(7.955vw);
+  }
+
+  .promo-features-bar {
+    top: 62.5vw;
+    left: 4.545vw;
+    width: 90.909vw;
+    height: 13.636vw;
+    border-radius: 2.727vw;
+    padding: 0 2.273vw;
+  }
+
+  .feature-item {
+    gap: 2.273vw;
+  }
+
+  .feature-icon {
+    width: 5.455vw;
+    height: 5.682vw;
+  }
+
+  .feature-text {
+    font-size: 3.182vw;
+  }
+
+  .feature-divider {
+    width: 0.227vw;
+    height: 6.818vw;
+  }
+
+  .promo-price-badge {
+    bottom: 39.091vw;
+    left: 1.818vw;
+    width: 38.636vw;
+    height: 38.636vw;
+  }
+
+  .price-label {
+    font-size: 6.591vw;
+    margin-bottom: 0.455vw;
+  }
+
+  .price-amount {
+    font-size: 13.481vw;
+  }
+
+  .promo-cta-btn {
+    bottom: 23.864vw;
+    left: 5.682vw;
+    width: 88.636vw;
+    height: 18.182vw;
+    border-radius: 34.091vw;
+    border-width: 0.455vw;
+    font-size: 5.455vw;
+    line-height: 6.591vw;
+  }
+
+  .promo-footer {
+    bottom: 3.864vw;
+    gap: 3.409vw;
+  }
+
+  .promo-footer span {
+    font-size: 3.636vw;
+    line-height: 4.545vw;
+  }
 }
 
 /* Основний контейнер */
@@ -1969,119 +2098,7 @@ background: radial-gradient(55.45% 129.03% at 53.12% 21%, rgba(255, 255, 255, 0.
 
 
 @media (max-width: 440px) {
-  .fitness-promo-card {
-    width: 100vw;
-    height: 200vw;
-  }
 
-  .promo-bg-image {
-    width: 100vw;
-    height: 200vw;
-  }
-
-  .promo-top-strip {
-    top: 6.8182vw;
-    padding: 1.8182vw 0;
-  }
-
-  .promo-strip-track p {
-    font-size: 3.6364vw;
-    line-height: 4.5455vw;
-    letter-spacing: 0.1136vw;
-    padding: 0 2.2727vw;
-  }
-
-  .promo-strip-track span {
-    font-size: 3.6364vw;
-    line-height: 4.5455vw;
-    letter-spacing: 0.1136vw;
-    padding-right: 9.0909vw;
-  }
-
-  .promo-header-group {
-    top: 14.7727vw;
-  }
-
-  .promo-main-title {
-    font-size: 10.9091vw;
-    text-shadow: 0 0.9091vw 2.2727vw rgba(0, 0, 0, 0.15);
-  }
-
-  .promo-subtitle {
-    font-size: 3.6364vw;
-    line-height: 4.5455vw;
-    margin: 0 0 1.1364vw 0;
-  }
-
-  .promo-description {
-    font-size: 3.6364vw;
-    line-height: 4.5455vw;
-  }
-
-  .promo-features-bar {
-    top: 61.9091vw;
-    left: 4.5455vw;
-    width: 90.9091vw;
-    height: 13.6364vw;
-    border-radius: 3.4091vw;
-    padding: 0 2.2727vw;
-  }
-
-  .feature-item {
-    gap: 2.2727vw;
-  }
-
-  .feature-icon {
-    width: 5.4545vw;
-    height: 5.6818vw;
-  }
-
-  .feature-text {
-    font-size: 3.1818vw;
-  }
-
-  .feature-divider {
-    width: 0.2273vw;
-    height: 6.8182vw;
-  }
-
-  .promo-price-badge {
-    bottom: 39.0909vw;
-    left: 1.8182vw;
-    width: 38.6364vw;
-    height: 38.6364vw;
-  }
-
-  .price-label {
-    font-size: 6.5909vw;
-    margin-bottom: 0.4545vw;
-  }
-
-  .price-amount {
-    font-size: 13.4809vw;
-  }
-
-  .promo-cta-btn {
-    bottom: 18.1818vw;
-    left: 5.6818vw;
-    width: 88.6364vw;
-    height: 18.1818vw;
-    border-radius: 34.0909vw;
-    border-width: 0.4545vw;
-    font-size: 5.4545vw;
-    line-height: 6.5909vw;
-  }
-
-  .promo-footer {
-    bottom: 6.8182vw;
-    gap: 1.8182vw;
-  }
-
-  .promo-footer span {
-    text-shadow: 0 0.9091vw 1.9091vw rgba(0, 0, 0, 0.25);
-    font-size: 3.6364vw;
-    line-height: 4.5455vw;
-  }
 
   .program-preview-card {
     width: 100vw;
